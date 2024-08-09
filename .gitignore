@@ -1,0 +1,12 @@
+# Ignorar carpetas relacionadas con SVN (si estás utilizando Git únicamente)
+branches/
+tags/
+
+# Ignorar dependencias de Node.js
+trunk/node_modules/
+
+# Ignorar archivos generados por Maven
+trunk/target/
+
+# Ignorar archivos de configuración específicos de 
+.svn/

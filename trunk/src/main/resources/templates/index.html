@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header/head :: head"></head>
+
+<header th:replace="header/header :: header"></header>
+<body class="bg-gray-200">
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 ">
+
+<!--    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">-->
+<!--        <div class="relative flex items-center justify-between h-16">-->
+<!--            <form th:action="@{/}" method="get" class="flex items-center">-->
+<!--                <div class="absolute inset-y-0 left-0 flex items-center pl-2 sm:static sm:inset-auto sm:mr-6 sm:pl-0">-->
+<!--                    <input type="text" name="query" placeholder="Buscar..." class="px-4 py-2 border rounded-md text-sm">-->
+<!--                    <button type="submit" class="ml-2 px-3 py-2 bg-gray-800 text-white rounded-md text-sm">Buscar-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="px-4 py-6 sm:px-0">
+        <!-- Mostrar mensaje si no se encuentran resultados -->
+<!--        <div th:if="${!hasResults}" class="text-center text-red-500 text-lg font-semibold">-->
+<!--            No se encontraron resultados.-->
+<!--        </div>-->
+
+
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
+            <div th:each="card : ${highRelevanceCards}"
+                 class="bg-white overflow-hidden shadow rounded-lg hover:shadow-xl hover:transform hover:scale-105 transition duration-300 ease-in-out w-32 h-32 m-0.5 p-1">
+                <div class="flex flex-col items-center justify-center h-full">
+                    <div class="w-full text-center">
+                        <dl>
+                            <h5 class="text-sm leading-5 font-medium text-gray-900" th:text="${card.title}"></h5>
+                            <dd class="mt-1 flex items-center justify-center text-sm leading-5 font-semibold text-blue-600">
+                                <a th:href="${card.url}" target="_blank"
+                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enlace
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round"
+                                              stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div th:if="${highRelevanceCards.size() > 0}">
+            <hr class="my-12 mt-12 mb-8 border-t-2 border-gray-300">
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
+            <div th:each="card : ${mediumRelevanceCards}"
+                 class="bg-white overflow-hidden shadow rounded-lg hover:shadow-xl hover:transform hover:scale-105 transition duration-300 ease-in-out w-32 h-32 m-0.5 p-1">
+                <div class="flex flex-col items-center justify-center h-full">
+                    <div class="w-full text-center">
+                        <dl>
+                            <h5 class="text-sm leading-5 font-medium text-gray-900" th:text="${card.title}"></h5>
+                            <dd class="mt-1 flex items-center justify-center text-sm leading-5 font-semibold text-blue-600">
+                                <a th:href="${card.url}" target="_blank"
+                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enlace
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round"
+                                              stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div th:if="${mediumRelevanceCards.size() > 0}">
+            <hr class="my-12 mt-12 mb-8 border-t-2 border-gray-300">
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
+            <div th:each="card : ${lowRelevanceCards}"
+                 class="bg-white overflow-hidden shadow rounded-lg hover:shadow-xl hover:transform hover:scale-105 transition duration-300 ease-in-out w-32 h-32 m-0.5 p-1">
+                <div class="flex flex-col items-center justify-center h-full">
+                    <div class="w-full text-center">
+                        <dl>
+                            <h5 class="text-sm leading-5 font-medium text-gray-900" th:text="${card.title}"></h5>
+                            <dd class="mt-1 flex items-center justify-center text-sm leading-5 font-semibold text-blue-600">
+                                <a th:href="${card.url}" target="_blank"
+                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enlace
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round"
+                                              stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</main>
+<footer th:replace="footer/footer :: footer"></footer>
+</body>
+</html>
