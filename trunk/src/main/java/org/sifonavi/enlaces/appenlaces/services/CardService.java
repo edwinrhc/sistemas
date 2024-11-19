@@ -18,8 +18,8 @@ public class CardService {
         cards = new ArrayList<>();
         cards.add(new Card("Portal ST-Fonavi","https://fonavi-st.pe/","alta"));
         cards.add(new Card("Página ST-Fonavi",  "https://www.fonavi-st.gob.pe/sifonavi/","alta"));
-        cards.add(new Card("SAAU",  "https://www.fonavi-st.gob.pe/saac2/","media"));
-        cards.add(new Card("SAUI", "https://www.fonavi-st.gob.pe/saci/","media"));
+        cards.add(new Card("SAAU",  "http://10.0.13.214:8080/saac2/","media"));
+        cards.add(new Card("SAUI", "http://10.0.13.214:8080/saci/","media"));
         cards.add(new Card("PCI",  "http://10.0.13.214:8080/pci/pago.jsp","media"));
         cards.add(new Card("SIPA", "http://10.0.13.214:8080/mpago/","media"));
         cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","media"));
