@@ -18,8 +18,25 @@ public class CardService {
         cards = new ArrayList<>();
         cards.add(new Card("Portal ST-Fonavi","https://fonavi-st.pe/","alta"));
         cards.add(new Card("Página ST-Fonavi",  "https://www.fonavi-st.gob.pe/sifonavi/","alta"));
+<<<<<<< .mine
+        cards.add(new Card("Registro F0",  "https://www.fonavi-st.gob.pe/registro0/","alta"));
+        cards.add(new Card("Registro F1",  "https://www.fonavi-st.gob.pe/registro1/pages/","alta"));
+        cards.add(new Card("Búsqueda de Empleadores",  "https://www.fonavi-st.gob.pe/empleadorf1/busca_empleador.htm","alta"));
+
+=======<<<<<<< .mine<<<<<<< .mine
         cards.add(new Card("SAAU",  "http://10.0.13.214:8080/saac2/","media"));
         cards.add(new Card("SAUI", "http://10.0.13.214:8080/saci/","media"));
+||||||| .r10
+>>>>>>> .theirs        cards.add(new Card("SAAU",  "https://www.fonavi-st.gob.pe/saac2/","media"));
+        cards.add(new Card("SAUI", "https://www.fonavi-st.gob.pe/saci/","media"));
+=======
+=======        cards.add(new Card("Registro F0",  "https://apps4.mineco.gob.pe/registro0/registro.htm","alta"));
+        cards.add(new Card("Registro F1",  "https://apps4.mineco.gob.pe/registro1/pages/index.jsp","alta"));
+        cards.add(new Card("Búsqueda de Empleadores",  "https://apps4.mineco.gob.pe/busqe/busca_empleador.htm","alta"));
+>>>>>>> .theirs
+        cards.add(new Card("SAAU",  "http://10.0.13.214:8080/saac2/","media"));
+        cards.add(new Card("SAUI", "http://10.0.13.214:8080/saci/","media"));
+>>>>>>> .r16
         cards.add(new Card("PCI",  "http://10.0.13.214:8080/pci/pago.jsp","media"));
         cards.add(new Card("SIPA", "http://10.0.13.214:8080/mpago/","media"));
         cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","media"));
