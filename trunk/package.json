@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "tailwindcss -i ./src/main/resources/static/css/tailwind.css -o ./src/main/resources/static/css/output.css"
+    "build:tailwind": "tailwindcss -i ./src/main/resources/static/css/tailwind.css -o ./src/main/resources/static/css/output.css",
+    "update-browserslist": "npx update-browserslist-db@latest && npm audit fix",
+    "build-css": "tailwindcss -i ./src/main/resources/static/css/tailwind.css -o ./src/main/resources/static/css/output.css"
   },
   "keywords": [],
   "author": "",

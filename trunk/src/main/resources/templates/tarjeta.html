@@ -8,7 +8,10 @@
                 <h5 class="text-lg font-medium text-gray-900 mb-2" th:text="${card.title}"></h5>
                 <a th:href="${card.url}" target="_blank" aria-label="Ir al enlace de [[${card.title}]]"
                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 group">
-                    Enlace
+                    <!-- Aquí va la lógica condicional -->
+                    <span th:if="${card.title == 'GDR'}">Rendimiento</span>
+                    <span th:if="${card.title != 'GDR'}">Enlace</span>
+
                     <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round"

@@ -33,12 +33,13 @@ public class CardService {
                 cards.add(new Card("Portal Aplicaciones", "https://www.fonavi-st.gob.pe/sifonavi/","alta"));
                 cards.add(new Card("CI",  "http://10.0.13.214:8080/pci/pago.jsp","alta"));
                 cards.add(new Card("SIPA", "http://10.0.13.214:8080/mpago/pago.jsp","alta"));
-                cards.add(new Card("Registro Herederos", "#","alta"));
+//                cards.add(new Card("Registro Herederos", "#","alta"));
 
                 cards.add(new Card("GOB.PE",  "https://www.gob.pe/fonavi-st","media"));
                 cards.add(new Card("Portal PTE",  "https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=38934#.Yp_PSnbMKUl","media"));
                 cards.add(new Card("SGD",  "https://sgd.fonavi-st.gob.pe/sgd/login.do","media"));
                 cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","media"));
+                cards.add(new Card("GDR",  "https://gdr.servir.gob.pe/#/auth/login","media"));
 
 
                 cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","baja"));
@@ -46,6 +47,8 @@ public class CardService {
 //        cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","baja"));
                 cards.add(new Card("SIMA",  "http://10.0.13.214:8080/sima/","baja"));
                 cards.add(new Card("Archivo",  "http://10.0.13.214:8080/archivo/","baja"));
+                cards.add(new Card("MASS",  "http://10.0.13.214:8080/mass/login","baja"));
+
 
 //        // Ordenar la lista de tarjetas
 //        Collections.sort(cards);
