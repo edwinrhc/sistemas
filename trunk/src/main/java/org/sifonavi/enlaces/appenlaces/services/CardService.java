@@ -12,40 +12,40 @@ import java.util.stream.Collectors;
 @Service
 public class CardService {
 
-    private List<Card> cards;
+        private List<Card> cards;
 
-    public CardService() {
-        cards = new ArrayList<>();
-        cards.add(new Card("Portal ST-Fonavi","https://fonavi-st.pe/","alta"));
-        cards.add(new Card("Página ST-Fonavi",  "https://www.fonavi-st.gob.pe/sifonavi/","alta"));
-<<<<<<< .mine
-        cards.add(new Card("Registro F0",  "https://www.fonavi-st.gob.pe/registro0/","alta"));
-        cards.add(new Card("Registro F1",  "https://www.fonavi-st.gob.pe/registro1/pages/","alta"));
-        cards.add(new Card("Búsqueda de Empleadores",  "https://www.fonavi-st.gob.pe/empleadorf1/busca_empleador.htm","alta"));
+        public CardService() {
+                cards = new ArrayList<>();
+                cards.add(new Card("Registro F0",  "https://www.fonavi-st.gob.pe/registro0/","alta"));
+                cards.add(new Card("Registro F1",  "https://www.fonavi-st.gob.pe/registro1/pages/","alta"));
+                cards.add(new Card("Estado de Registro",  "https://www.fonavi-st.gob.pe/sifonavic1/","alta"));
 
-=======<<<<<<< .mine<<<<<<< .mine
-        cards.add(new Card("SAAU",  "http://10.0.13.214:8080/saac2/","media"));
-        cards.add(new Card("SAUI", "http://10.0.13.214:8080/saci/","media"));
-||||||| .r10
->>>>>>> .theirs        cards.add(new Card("SAAU",  "https://www.fonavi-st.gob.pe/saac2/","media"));
-        cards.add(new Card("SAUI", "https://www.fonavi-st.gob.pe/saci/","media"));
-=======
-=======        cards.add(new Card("Registro F0",  "https://apps4.mineco.gob.pe/registro0/registro.htm","alta"));
-        cards.add(new Card("Registro F1",  "https://apps4.mineco.gob.pe/registro1/pages/index.jsp","alta"));
-        cards.add(new Card("Búsqueda de Empleadores",  "https://apps4.mineco.gob.pe/busqe/busca_empleador.htm","alta"));
->>>>>>> .theirs
-        cards.add(new Card("SAAU",  "http://10.0.13.214:8080/saac2/","media"));
-        cards.add(new Card("SAUI", "http://10.0.13.214:8080/saci/","media"));
->>>>>>> .r16
-        cards.add(new Card("PCI",  "http://10.0.13.214:8080/pci/pago.jsp","media"));
-        cards.add(new Card("SIPA", "http://10.0.13.214:8080/mpago/","media"));
-        cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","media"));
+                cards.add(new Card("Grupo de Pago","https://www.fonavi-st.gob.pe/sifonavic2/","alta"));
+                cards.add(new Card("Consulta Cerad",  "https://www.fonavi-st.gob.pe/sifonavic5/","alta"));
 
-        cards.add(new Card("STD", "http://10.0.13.214:8080/std/","baja"));
-        cards.add(new Card("SGD",  "https://sgd.fonavi-st.gob.pe/sgd/login.do","baja"));
-        cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","baja"));
-        cards.add(new Card("SIMA",  "http://10.0.13.214:8080/sima/","baja"));
-        cards.add(new Card("Archivo",  "http://10.0.13.214:8080/archivo/","baja"));
+                cards.add(new Card("Pendiente de Cobro",  "https://www.fonavi-st.gob.pe/sifonavic3/","alta"));
+                cards.add(new Card("Publicación Herederos",  "https://www.fonavi-st.gob.pe/sifonavic4/","alta"));
+                cards.add(new Card("Búsqueda Empleadores",  "https://www.fonavi-st.gob.pe/empleadorf1/busca_empleador.htm","alta"));
+                cards.add(new Card("SAAU",  "https://www.fonavi-st.gob.pe/saac2/","alta"));
+                cards.add(new Card("SAUI", "https://www.fonavi-st.gob.pe/saci/","alta"));
+
+                cards.add(new Card("Portal Web",  "https://fonavi-st.pe/","alta"));
+                cards.add(new Card("Portal Aplicaciones", "https://www.fonavi-st.gob.pe/sifonavi/","alta"));
+                cards.add(new Card("CI",  "http://10.0.13.214:8080/pci/pago.jsp","alta"));
+                cards.add(new Card("SIPA", "http://10.0.13.214:8080/mpago/pago.jsp","alta"));
+                cards.add(new Card("Registro Herederos", "#","alta"));
+
+                cards.add(new Card("GOB.PE",  "https://www.gob.pe/fonavi-st","media"));
+                cards.add(new Card("Portal PTE",  "https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=38934#.Yp_PSnbMKUl","media"));
+                cards.add(new Card("SGD",  "https://sgd.fonavi-st.gob.pe/sgd/login.do","media"));
+                cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","media"));
+
+
+                cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","baja"));
+                cards.add(new Card("STD", "http://10.0.13.214:8080/std/","baja"));
+//        cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","baja"));
+                cards.add(new Card("SIMA",  "http://10.0.13.214:8080/sima/","baja"));
+                cards.add(new Card("Archivo",  "http://10.0.13.214:8080/archivo/","baja"));
 
 //        // Ordenar la lista de tarjetas
 //        Collections.sort(cards);
@@ -56,15 +56,15 @@ public class CardService {
 //            card.setTitle((i + 1)+". "+ card.getTitle());
 //        }
 
-    }
+        }
 
-    public List<Card> getCards(){
-        return  cards;
-    }
+        public List<Card> getCards(){
+                return  cards;
+        }
 
-    public List<Card> searchCards(String query){
-        return cards.stream()
-                .filter(card -> card.getTitle().toLowerCase().contains(query.toLowerCase()))
-                .collect(Collectors.toList());
-    }
+        public List<Card> searchCards(String query){
+                return cards.stream()
+                        .filter(card -> card.getTitle().toLowerCase().contains(query.toLowerCase()))
+                        .collect(Collectors.toList());
+        }
 }
