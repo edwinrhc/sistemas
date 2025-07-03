@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/branches/feature-developer-enhancements-eh" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/tags/sistemasv.1.0" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/tags/sistemasv.1.0.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/branches/develop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/trunk" vcs="Git" />
   </component>
 </project>

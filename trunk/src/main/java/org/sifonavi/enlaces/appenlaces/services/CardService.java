@@ -42,7 +42,7 @@ public class CardService {
                 cards.add(new Card("GDR",  "https://gdr.servir.gob.pe/#/auth/login","media"));
 
 
-                cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/sisbene/","baja"));
+                cards.add(new Card("Beneficiados",  "http://10.0.13.214:8080/beneficiado/login","baja"));
                 cards.add(new Card("STD", "http://10.0.13.214:8080/std/","baja"));
 //        cards.add(new Card("MPV",  "https://sgd.fonavi-st.gob.pe/iotramitesgd/login.jsf","baja"));
                 cards.add(new Card("SIMA",  "http://10.0.13.214:8080/sima/","baja"));
