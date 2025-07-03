@@ -1,4 +1,4 @@
-
+# Ignorar carpetas de compilación / empaquetado Java
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -17,7 +17,7 @@ target/
 /node_modules
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
